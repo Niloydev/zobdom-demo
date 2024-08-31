@@ -1,0 +1,234 @@
+<html lang="en"><head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zobdom</title>
+    <style>
+        /* html,body{
+            height: 100%;
+        } */
+        .maincontainer{
+            width: 100%;
+            height: auto;
+        }
+        .navzobdom{
+            border: 0.1px solid black;
+            border-radius: 5px;
+            width: 100%;
+            height: 100px;
+            /* background-color: #f7f3c8; */
+            background-color: white;
+            display: grid;
+            grid-template-columns: 200px auto;
+            /* color: rgb(203,23,74); */
+            color: black;
+            align-items: center;
+            /* position: fixed; */
+        }
+        .button{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+        .buttonitem{
+            /* border: 2px solid rgb(203,23,74); */
+            border-radius: 5px;
+            height: 100%;
+            padding: 8px;
+            margin: 0%;
+            align-content: center;
+            font-size: x-large;
+            font-weight: 700;
+        }
+        
+        .buttonitem:hover{
+            /* background-color: yellow;
+            color: black; */
+
+            background-color: yellow;
+            color: black;
+        }
+        .logozobdom{
+            /* border: 2px solid rgb(203,23,74); */
+            display: grid;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            /* border: 0.1px solid black; */
+            background-color: white;
+/* background-image: linear-gradient(315deg, #ffffff 0%, #91a6ff 74%); */
+            display: grid;
+            grid-template-rows: 100vh auto;
+            grid-template-columns: 250px auto;
+            gap: 5px;
+            padding: 0%;
+            margin: 0%;
+            /* font-weight: 600; */
+            /* position: absolute; */
+            /* visibility: hidden; */
+        }
+
+        .sidebar{
+            align-content: center;
+        }
+        .coursecategory{
+            /* border: 0.1px solid black;` */
+            color: black;
+            border-radius: 5px;
+            margin: 2px;
+            height: 60px;
+            font: sans-serif;
+            font-size: large;
+            font-weight: 600;
+            align-content: center;
+            /* background-color: black; */
+        }
+
+        .coursecategory:hover{
+            background-color: yellow;
+            color: black;
+
+            /* background-color: black;
+            color: yellow; */
+        }
+        
+        .coursecontainer{
+            margin-top: 5px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 3%;
+            justify-content: space-around;
+        }
+
+        .course{
+            border: 0.1px solid black;
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            width: 30%;
+            height: 180x;
+            text-align: center;
+            align-content: center;
+            font: sans-serif;
+            font-size: large;
+            font-weight: 600;
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .course:hover{
+            /* background-color: black;
+            color: white; */
+
+            background-color: yellow;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .courseimg{
+            width: 100%;
+            height: 150px;
+            object-fit:fill;
+        }
+
+        .logozobdom img{
+            height: 40px;
+            width: 1000px;
+            justify-content: center;
+            object-fit: cover;
+        }
+
+        .w-100{
+            height: 400px;
+            object-fit: fill;
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="navzobdom">
+            <div class="logozobdom"><img src="./assets/zobdom logo demo5.2.png" alt="zobdom logo"></div>
+            <!-- <div class="logo"><h1>Z</h1><h2>obdm</h2></div> -->
+            <div class="button">
+                <div class="buttonitem home">Home</div>
+                <div class="buttonitem about">About</div>
+                <div class="buttonitem services">Services</div>
+                <div class="buttonitem login">Login</div>
+                <div class="buttonitem signup">Signup</div>
+                <div class="buttonitem about">Plans & Pricing</div>
+            </div>
+        </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/course4.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Learn C with Aakash</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/course11.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>build Facebook copy using react</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/course3.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Data science with Rajib</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <div class="container">
+
+            <div class="sidebar">
+                <div class="coursecategory">Computer science(12)</div>
+                <div class="coursecategory">Data science and analytics(5)</div>
+                <div class="coursecategory">Civil Engineering(3)</div>
+                <div class="coursecategory">Management(15)</div>
+                <div class="coursecategory">Job preparation(8)</div>
+            </div>
+            <div class="coursecontainer">
+                <div class="course" id="course1"><img src="./assets/course1.png" alt="Learn Python beginer adavance" class="courseimg">Learn Python beginer adavance</div>
+                <div class="course" id="course2"><img src="./assets/course2.png" alt="python for datascience" class="courseimg">python for datascience</div>
+                <div class="course" id="course3"><img src="./assets/course3.jpeg" alt="Datascience with job guidence" class="courseimg">Datascience with job guidence</div>
+                <div class="course" id="course4"><img src="./assets/course4.jpeg" alt="C/C++ learning" class="courseimg">C/C++ learning</div>
+                <div class="course" id="course5"><img src="./assets/course5.jpeg" alt="Microsoft pack all in one" class="courseimg">Microsoft pack all in one</div>
+                <div class="course" id="course6"><img src="./assets/course6.jpeg" alt="Leadership management" class="courseimg">Leadership management</div>
+                <div class="course" id="course7"><img src="./assets/course7.jpg" alt="Conquire Accounting with tricks" class="courseimg">Conquire Accounting with tricks </div>
+                <div class="course" id="course8"><img src="./assets/course8.jpeg" alt="Math is everywhere" class="courseimg">Math is everywhere</div>
+                <div class="course" id="course9"><img src="./assets/course9.png" alt="Data Structue &amp; Algorithms" class="courseimg">Data Structue &amp; Algorithms</div>
+                <div class="course" id="course10"><img src="./assets/course10.webp" alt="Ethical Hacker in 120 days" class="courseimg">Ethical Hacker in 120 days</div>
+                <div class="course" id="course11"><img src="./assets/course11.png" alt="Build Facebook with react" class="courseimg">Build Facebook with react</div>
+                <div class="course" id="course12"><img src="./assets/course12.jpeg" alt="Autocad for All" class="courseimg">Autocad for All</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body></html>
